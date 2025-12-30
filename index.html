@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gillian Young</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg-main: #edece8;
+      --bg-light: #f6f5f1;
+      --bg-white: #ffffff;
+      --bg-soft: #e7ebe6;
+
+      --text-main: #1f1f1f;
+      --text-muted: #5f5f5f;
+
+      --green: #7f917c;
+      --green-dark: #5f6f5c;
+      --brown: #9b8570;
+
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-main);
+      line-height: 1.7;
+      letter-spacing: 0.1px;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    header {
+      position: relative;
+      background: linear-gradient(
+        180deg,
+        #e9ebe6 0%,
+        #f6f5f1 100%
+      );
+      padding: 7.5rem 2rem 5.5rem;
+      overflow: hidden;
+    }
+
+    .header-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          90deg,
+          rgba(127,145,124,0.18),
+          rgba(127,145,124,0.18) 1px,
+          transparent 1px,
+          transparent 52px
+        );
+    }
+
+    .header-inner {
+      position: relative;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    h1 span {
+      font-weight: 400;
+      color: var(--green-dark);
+    }
+
+    .intro {
+      margin-top: 1.3rem;
+      font-size: 1.05rem;
+      max-width: 620px;
+      color: var(--text-muted);
+    }
+
+    nav {
+      margin-top: 2.8rem;
+      display: flex;
+      gap: 2.2rem;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-main);
+      border-bottom: 1px solid transparent;
+      padding-bottom: 4px;
+    }
+
+    nav a:hover {
+      border-color: var(--green);
+    }
+
+    /* ---------- SECTIONS ---------- */
+
+    section {
+      padding: 4.8rem 2rem;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-white {
+      background: var(--bg-white);
+    }
+
+    .section-soft {
+      background: var(--bg-soft);
+    }
+
+    .section-light {
+      background: var(--bg-light);
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      font-weight: 500;
+    }
+
+    .accent-bar {
+      width: 44px;
+      height: 4px;
+      background: linear-gradient(
+        90deg,
+        var(--green),
+        var(--brown)
+      );
+      border-radius: 999px;
+      margin: 1.1rem 0 2.7rem;
+    }
+
+    p {
+      max-width: 700px;
+      color: var(--text-muted);
+    }
+
+    /* ---------- GRID ---------- */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.6rem;
+      margin-top: 3.2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.9rem;
+      box-shadow: 0 14px 34px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 46px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 1.3rem;
+    }
+
+    .label {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brown);
+      margin-bottom: 0.45rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2.2rem;
+      margin-top: 2.6rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      text-align: center;
+      padding: 3.2rem 2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background: var(--bg-light);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-lines"></div>
+
+  <div class="header-inner">
+    <h1>Gillian <span>Young</span></h1>
+
+    <p class="intro">
+      Digital design and visual communication with a foundation in business,
+      strategy, and thoughtful storytelling.
+    </p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="about" class="section-light">
+  <div class="section-inner">
+    <h2>About</h2>
+    <div class="accent-bar"></div>
+    <p>
+      I am a University of Waterloo student with a background in Global Business and
+      Digital Arts and Environment and Business. My interests sit at the intersection
+      of design, communication, and strategy.
+    </p>
+    <p style="margin-top: 1rem;">
+      I enjoy building visual systems that feel clear, warm, and intentional across
+      digital and print contexts.
+    </p>
+  </div>
+</section>
+
+<section id="work" class="section-white">
+  <div class="section-inner">
+    <h2>Selected Work</h2>
+    <div class="accent-bar"></div>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="Screenshot 2024-10-27 191223.png" alt="Personal logo">
+        <img src="Screenshot 2024-10-27 201744.png" alt="Personal logo">
+        <div class="label">Visual Identity</div>
+        <h3>Personal Identity Mark</h3>
+        <p>
+          I created a new peacock logo for this project to give Sally Hansen a more centralized brand identity. The previous design lacked consistency, so I crafted a logo that reflects the brand’s timeless and classy nature, making it instantly recognizable.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot 2025-12-29 193924.png" alt="Rogers design project">
+         <img src="Screenshot 2025-12-29 193814.jpg" alt="Rogers design project">
+         <img src="dj1.jpg" alt="Rogers design project">
+        <div class="label">Digital Experience</div>
+        <h3>Rogers Design Jam</h3>
+        <p>
+          Concept work focused on presenting digital rewards and experiences through
+          clear hierarchy and intuitive layouts. We won Runner-up as we focused on clarity and simplicity.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot 2025-11-19 210942.png
+" alt="ThriftLink platform">
+          <img src="Screenshot 2025-11-19 183730.png
+" alt="ThriftLink platform">
+         <img src="Screenshot 2025-10-22 193841.png
+" alt="ThriftLink platform">
+            <img src=" Screenshot 2025-12-30 140400.jpg
+" alt="ThriftLink platform">
+       
+        <div class="label">Product Concept</div>
+        <h3>ThriftLink</h3>
+        <p>
+          A startup concept developed to support local thrift stores through a
+          centralized online shopping platform. We will be helping stores gain digital literacy skills and analytics showing them what customers click on, what items perform well, and helping them build a strong online presence. So while the product looks like a website, it’s really a service that gives thrift stores the tools and reach they need to connect with shoppers who already want what they sell.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot 2025-03-25 223611.png"" alt="Poster design">
+        <img src="Screenshot 2025-03-24 194054.png "" alt="Poster design">
+        <img src="Screenshot 2025-03-24 190545.png "" alt="Poster design">
+        <div class="label">Print Design</div>
+        <h3>Poster and Flyer Series</h3>
+        <p>
+          A collection of print-based designs exploring, spacing, and
+          visual hierarchy. Simple line art designs using illustrator's curvature pen and muted colour pallets. 
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section-soft">
+  <div class="section-inner">
+    <h2>Skills</h2>
+    <div class="accent-bar"></div>
+
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Design Tools</h3>
+        <p>Photoshop, Illustrator, InDesign, Figma, Premiere Pro</p>
+      </div>
+
+      <div class="card">
+        <h3>Visual Communication</h3>
+        <p>Presentation design, branding systems, content creation</p>
+      </div>
+
+      <div class="card">
+        <h3>Workflow</h3>
+        <p>File organization, collaborative tools, digital asset management</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-light">
+  <div class="section-inner">
+    <h2>Contact</h2>
+    <div class="accent-bar"></div>
+    <p>
+      gillian.4057@gmail.com<br>
+      519-404-0863
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Gillian Young
+</footer>
+
+</body>
+</html>
+i
